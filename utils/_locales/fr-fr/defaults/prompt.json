@@ -1,0 +1,7 @@
+{
+  "private": "Voici une conversation entre moi et {chat_name}, répondez comme si vous étiez moi.\nSi vous trouvez un message tel que {or_non_text_messages}, considérez qu'une communication a été envoyée, mais vous ne savez pas de quoi il s'agit.\nNe me demandez pas plus d'informations, n'utilisez pas {nor_non_text_messages}.\nVoici la conversation :",
+  "group": "Voici une conversation entre moi et le groupe {chat_name}, répondez comme si vous étiez moi.\nSi vous trouvez un message tel que {or_non_text_messages}, considérez qu'une communication a été envoyée, mais vous ne savez pas de quoi il s'agit.\nNe me demandez pas plus d'informations, n'utilisez pas {nor_non_text_messages}.\nVoici la conversation :",
+  "or": "ou",
+  "nor": "ni",
+  "me": "Moi"
+}

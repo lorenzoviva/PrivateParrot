@@ -1,0 +1,188 @@
+{
+  "default": {
+    "en-us": {
+      "private": "The following is a conversation between me and {chat_name}, answer as if you were me.\nIf you find a message like {or_non_text_messages} consider a communication has been sent, but you do not know what it is.\nDo not ask me for more information, do not use {nor_non_text_messages}\nHere is the conversation:",
+      "group": "The following is a conversation between me and the group {chat_name}, answer as if you were me.\nIf you find a message like {or_non_text_messages} consider a communication has been sent, but you do not know what it is.\nDo not ask me for more information, do not use {nor_non_text_messages}\nHere is the conversation:",
+      "or": "or",
+      "nor": "nor",
+      "me": "Me"
+    },
+    "it-it": {
+      "private": "Quella che segue è una conversazione tra me e {chat_name}, rispondi come se fossi me.\nSe trovi un messaggio del tipo {or_non_text_messages} considera che sia stata inviata una comunicazione, ma non sai di cosa si tratta.\nNon chiedermi ulteriori informazioni, non utilizzare {nor_non_text_messages}\nEcco la conversazione:",
+      "group": "Quella che segue è una conversazione tra me e il gruppo {chat_name}, rispondi come se fossi me.\nSe trovi un messaggio del tipo {or_non_text_messages} considera che sia stata inviata una comunicazione, ma non sai di cosa si tratta.\nNon chiedermi ulteriori informazioni, non utilizzare {nor_non_text_messages}\nEcco la conversazione:",
+      "or": "oppure",
+      "nor": "né",
+      "me": "Me"
+    },
+    "fr-fr": {
+      "private": "Voici une conversation entre moi et {chat_name}, répondez comme si vous étiez moi.\nSi vous trouvez un message tel que {or_non_text_messages}, considérez qu'une communication a été envoyée, mais vous ne savez pas de quoi il s'agit.\nNe me demandez pas plus d'informations, n'utilisez pas {nor_non_text_messages}.\nVoici la conversation :",
+      "group": "Voici une conversation entre moi et le groupe {chat_name}, répondez comme si vous étiez moi.\nSi vous trouvez un message tel que {or_non_text_messages}, considérez qu'une communication a été envoyée, mais vous ne savez pas de quoi il s'agit.\nNe me demandez pas plus d'informations, n'utilisez pas {nor_non_text_messages}.\nVoici la conversation :",
+      "or": "ou",
+      "nor": "ni",
+      "me": "Moi"
+    },
+    "es-es": {
+      "private": "A continuación se muestra una conversación entre yo y {chat_name}, responde como si fueras yo.\nSi encuentras un mensaje como {or_non_text_messages}, considera que se ha enviado una comunicación, pero no sabes de qué se trata.\nNo me pidas más información, no uses {nor_non_text_messages}.\nAquí está la conversación:",
+      "group": "A continuación se muestra una conversación entre yo y el grupo {chat_name}, responde como si fueras yo.\nSi encuentras un mensaje como {or_non_text_messages}, considera que se ha enviado una comunicación, pero no sabes de qué se trata.\nNo me pidas más información, no uses {nor_non_text_messages}.\nAquí está la conversación:",
+      "or": "o",
+      "nor": "ni",
+      "me": "Yo"
+    }
+  },
+  "language": {
+    "en-us": {
+      "address": {
+        "value": "U.S. address",
+        "choice": "address.json",
+        "prompt": "Generate a random list of 150 fictional addresses in the United States. Do not repeat any address, do not specify the city."
+      },
+      "animal_name": {
+        "value": "Domestic animal name",
+        "choice": "animal_name.json",
+        "prompt": "Write a list of 150 fictional domestic animal names that could exist in the United States. Do not repeat any animal name."
+      },
+      "company_name": {
+        "value": "Company name",
+        "choice": "company_name.json",
+        "prompt": "Write a list of 150 fictional company names that could be based in the United States. Do not repeat any company name."
+      },
+      "couple_nickname": {
+        "value": "Couple nickname",
+        "choice": "couple_nickname.json",
+        "prompt": "Write a list of 150 affectionate nicknames for fictional people who could live in the United States. Do not repeat any nickname. A nickname is an affectionate name for one's partner in a couple."
+      },
+      "female_name": {
+        "value": "Female first name",
+        "choice": "female_name.json",
+        "prompt": "Write a list of 150 fictional female first names that could belong to people living in the United States. Do not repeat any female name."
+      },
+      "first_name": {
+        "value": "First name",
+        "choice": "first_name.json",
+        "prompt": "Write a list of 150 fictional first names that could belong to people living in the United States. Do not repeat any first name, do not write any last name."
+      },
+      "gaming_name": {
+        "value": "Gaming nickname",
+        "choice": "gaming_nickname.json",
+        "prompt": "Write a list of 150 gaming nicknames for fictional people who could live in the United States. Do not repeat any nickname, keep in mind that there are few non-English nicknames in the United States."
+      },
+      "last_name": {
+        "value": "Last name",
+        "choice": "last_name.json",
+        "prompt": "Write a list of 150 fictional last names that could belong to people living in the United States. Do not repeat any last name."
+      },
+      "male_name": {
+        "value": "Male first name",
+        "choice": "male_name.json",
+        "prompt": "Write a list of 150 fictional male first names that could belong to people living in the United States. Do not repeat any male name."
+      },
+      "nickname": {
+        "value": "Nickname",
+        "choice": "nickname.json",
+        "prompt": "Write a list of 150 nicknames for fictional people who could live in the United States. Do not repeat any nickname."
+      },
+      "name": {
+        "value": "Name",
+        "choice": "person_name.json",
+        "prompt": "Write a list of 150 fictional full names (first name and last name) of people who could live in the United States. Do not repeat any full name."
+      },
+      "phone_number": {
+        "value": "U.S. phone number",
+        "choice": "phone_number.json",
+        "prompt": "Write a list of 150 fictional phone number for people who could live in the United States. Do not repeat any phone number."
+      },
+      "license_plate": {
+        "value": "License plate",
+        "choice": "license_plate.json",
+        "prompt": "Generate a list of 150 random U.S. license plate number."
+      },
+      "username": {
+        "value": "Username",
+        "choice": "username.json",
+        "prompt": "Write a list of 150 fictional usernames for people who could live in the United States. Do not repeat any username."
+      },
+      "password": {
+        "value": "Password",
+        "choice": "password.json",
+        "prompt": "Write a list of 150 fictional passwords for people who could live in the United States. Do not repeat any password."
+      }
+    },
+    "it-it": {
+      "address": {
+        "value": "Indirizzo in Italia",
+        "choice": "address.json",
+        "prompt": "Genera una lista casuale di 150 indirizzi fittizi in Italia. Non ripetere alcun indirizzo, non specificare la città."
+      },
+      "animal_name": {
+        "value": "Nome di animale domestico",
+        "choice": "animal_name.json",
+        "prompt": "Scrivi una lista di 150 nomi di animale domestico fittizi che potrebbero vivere in Italia. Non ripetere alcun nome di animale domestico."
+      },
+      "company_name": {
+        "value": "Nome di società",
+        "choice": "company_name.json",
+        "prompt": "Scrivi una lista di 150 nomi di società fittizie che potrebbero avere sede fiscale in Italia. Non ripetere alcun nome di società."
+      },
+      "couple_nickname": {
+        "value": "Nomignolo affettuoso",
+        "choice": "couple_nickname.json",
+        "prompt": "Scrivi una lista di 150 nomi affettuosi di persone fittizie che potrebbero vivere in Italia. Non ripetere alcun nomignolo. Un nomignolo è un nome affettuoso per il proprio partner in coppia."
+      },
+      "female_name": {
+        "value": "Nome femminile",
+        "choice": "female_name.json",
+        "prompt": "Scrivi una lista di 150 nomi femminili di persone fittizie che potrebbero vivere in Italia. Non ripetere alcun nome femminile."
+      },
+      "first_name": {
+        "value": "Nome",
+        "choice": "first_name.json",
+        "prompt": "Scrivi una lista di 150 nomi di persone fittizie che potrebbero vivere in Italia. Non ripetere alcun nome, non scrivere alcun cognome."
+      },
+      "gaming_name": {
+        "value": "Soprannome gaming",
+        "choice": "gaming_nickname.json",
+        "prompt": "Scrivi una lista di 150 soprannomi di gaming per persone fittizie che potrebbero vivere in Italia. Non ripetere alcun soprannome, tieni in considerazione che ci sono pochi soprannomi non italiani in Italia."
+      },
+      "last_name": {
+        "value": "Cognome",
+        "choice": "last_name.json",
+        "prompt": "Scrivi una lista di 150 cognomi di persone fittizie che potrebbero vivere in Italia. Non ripetere alcun cognome."
+      },
+      "male_name": {
+        "value": "Nome maschile",
+        "choice": "male_name.json",
+        "prompt": "Scrivi una lista di 150 nomi maschili di persone fittizie che potrebbero vivere in Italia. Non ripetere alcun nome maschile."
+      },
+      "nickname": {
+        "value": "Soprannome",
+        "choice": "nickname.json",
+        "prompt": "Scrivi una lista di 150 soprannomi di persone fittizie che potrebbero vivere in Italia. Non ripetere alcun soprannome, tieni in considerazione che ci sono anche soprannomi non italiani in Italia."
+      },
+      "name": {
+        "value": "Nome e cognome",
+        "choice": "person_name.json",
+        "prompt": "Scrivi una lista di 150 nomi completi (nome e cognome) di persone fittizie che potrebbero vivere in Italia. Non ripetere alcun nome e cognome."
+      },
+      "phone_number": {
+        "value": "Numero di telefono in Italia",
+        "choice": "phone_number.json",
+        "prompt": "Scrivi un numero di telefono di persone fittizie che potrebbero vivere in Italia. Non ripetere alcun numero di telefono."
+      },
+      "license_plate": {
+        "value": "Targa",
+        "choice": "license_plate.json",
+        "prompt": "Genera una lista di 150 numeri di targa casuali per veicoli in Italia."
+      },
+      "username": {
+        "value": "Nome utente",
+        "choice": "username.json",
+        "prompt": "Scrivi una lista di 150 nomi utente fittizi per persone che potrebbero vivere in Italia. Non ripetere alcun nome utente."
+      },
+      "password": {
+        "value": "Password",
+        "choice": "password.json",
+        "prompt": "Scrivi una lista di 150 password fittizie per persone che potrebbero vivere in Italia. Non ripetere alcuna password."
+      }
+    }
+  }
+}

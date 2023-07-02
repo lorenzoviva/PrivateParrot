@@ -1,0 +1,77 @@
+{
+  "address": {
+    "value": "Dirección en España",
+    "choice": "address.json",
+    "prompt": "Genera una lista aleatoria de 150 direcciones ficticias en España. No repitas ninguna dirección, no especifiques la ciudad."
+  },
+  "animal_name": {
+    "value": "Nombre de animal doméstico",
+    "choice": "animal_name.json",
+    "prompt": "Escribe una lista de 150 nombres ficticios de animales domésticos que podrían existir en España. No repitas ningún nombre de animal."
+  },
+  "company_name": {
+    "value": "Nombre de la empresa",
+    "choice": "company_name.json",
+    "prompt": "Escribe una lista de 150 nombres ficticios de empresas que podrían tener su sede en España. No repitas ningún nombre de empresa."
+  },
+  "couple_nickname": {
+    "value": "Apodo de pareja",
+    "choice": "couple_nickname.json",
+    "prompt": "Escribe una lista de 150 apodos cariñosos para personas ficticias que podrían vivir en España. No repitas ningún apodo. Un apodo es un nombre cariñoso para la pareja en una relación."
+  },
+  "female_name": {
+    "value": "Nombre de mujer",
+    "choice": "female_name.json",
+    "prompt": "Escribe una lista de 150 nombres ficticios de mujer que podrían pertenecer a personas que viven en España. No repitas ningún nombre de mujer."
+  },
+  "first_name": {
+    "value": "Nombre",
+    "choice": "first_name.json",
+    "prompt": "Escribe una lista de 150 nombres ficticios que podrían pertenecer a personas que viven en España. No repitas ningún nombre, no escribas ningún apellido."
+  },
+  "gaming_name": {
+    "value": "Apodo de juego",
+    "choice": "gaming_nickname.json",
+    "prompt": "Escribe una lista de 150 apodos de juego para personas ficticias que podrían vivir en España. No repitas ningún apodo, ten en cuenta que hay pocos apodos no ingleses en España."
+  },
+  "last_name": {
+    "value": "Apellido",
+    "choice": "last_name.json",
+    "prompt": "Escribe una lista de 150 apellidos ficticios que podrían pertenecer a personas que viven en España. No repitas ningún apellido."
+  },
+  "male_name": {
+    "value": "Nombre de hombre",
+    "choice": "male_name.json",
+    "prompt": "Escribe una lista de 150 nombres ficticios de hombre que podrían pertenecer a personas que viven en España. No repitas ningún nombre de hombre."
+  },
+  "nickname": {
+    "value": "Apodo",
+    "choice": "nickname.json",
+    "prompt": "Escribe una lista de 150 apodos para personas ficticias que podrían vivir en España. No repitas ningún apodo."
+  },
+  "name": {
+    "value": "Nombre",
+    "choice": "person_name.json",
+    "prompt": "Escribe una lista de 150 nombres completos ficticios (nombre y apellido) de personas que podrían vivir en España. No repitas ningún nombre completo."
+  },
+  "phone_number": {
+    "value": "Número de teléfono en España",
+    "choice": "phone_number.json",
+    "prompt": "Escribe una lista ficticia de 150 números de teléfono ficticios de personas ficticias que podrían vivir en España. No repitas ningún número de teléfono."
+  },
+  "license_plate": {
+    "value": "Matrícula",
+    "choice": "license_plate.json",
+    "prompt": "Genera una lista de 150 números de matrícula aleatorios para vehículos en España."
+  },
+  "username": {
+    "value": "Nombre de usuario",
+    "choice": "username.json",
+    "prompt": "Escribe una lista de 150 nombres de usuario ficticios para personas que podrían vivir en España. No repitas ningún nombre de usuario."
+  },
+  "password": {
+    "value": "Contraseña",
+    "choice": "password.json",
+    "prompt": "Escribe una lista de 150 contraseñas ficticias para personas que podrían vivir en España. No repitas ninguna contraseña."
+  }
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Private Parrot</title>
+    <script type="module" src="popup.js"></script>
+    <script type="module" src="tagbox.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tagbox.css">
+</head>
+<body class="flex-column">
+<div class="header-panel flex-column">
+    <div><h1 class="title">Private Parrot</h1></div>
+
+
+    <div>
+        <img src="/images/png/parrot.png" class="main-icon" style="height: 5rem;">
+        <button id="restartButton" class="button danger-button right">&#x1F50C; Restart</button>
+        <button id="clearStorageButton" class="button danger-button right">&#x274C;&#x1F4BE; Clear storage</button>
+        <button id="clearCacheButton" class="button danger-button right">&#9851; Clear cache</button>
+    </div>
+    <h1>&#x1F5E8; Chat Apps</h1>
+    Select App:
+    <select id="providerSelect">
+        <option value="any">Both: Telegram & Whatsapp</option>
+        <option value="telegram">Telegram</option>
+        <option value="whatsapp">Whatsapp</option>
+    </select>
+    <div id="chatSettingsLabel" style="display:none">Select chat for <span id="providerChoice">Telegram</span>.</div>
+    <select id="chatSelect" style="display:none"></select>
+
+    <hr>
+</div>
+<div class="settings-background flex-column">
+
+<h1>&#x2699; Settings <span id="settingsTitleSpan"></span></h1>
+<div class="settings-panel flex-column">
+    <h3>&#x1F4AC; Chat Prompt
+        <button class="tooltip rounded">?
+            <div class="tooltiptext">Insert under Chat Prompt: instructions, statements or any information you would like to use to generate responses in the webchats. The information inserted will be sent to the language model that will generate an answer based on the user's typical responses.</div>
+        </button>
+        <button id="resetPromptButton" class="tooltip right button warning-button">&#x1F5D8;  Reset
+            <div class="tooltiptext">Reset to default chat prompt for language <span id="resetTooltipLanguage">Language: en - Country: us</span></div>
+        </button>
+    </h3>
+    <div >Write a prompt, it will be added on top of the chat:</div>
+    <textarea   id="chatPrompt">The following is a conversation between me and {chat_name}, answer as if you were me.
+If you find a message like {or_non_text_messages} consider a communication has been sent, but you do not know what it is.
+Do not ask me for more information, do not use {nor_non_text_messages}
+Here is the conversation:</textarea>
+    <div class="chat-panel" id="chatPromptCompiledPanel"  style="display:none">
+        <div class="chat-panel-header">Full conversation
+            <button data-copy-prompt class="tooltip right button warning-button" style="margin: 0;">&#x1F4CB; Copy
+                <div class="tooltiptext">Copy the example conversation to the clipboard. You can paste it manually on any LLM Chat (e.g. ChatGPT).</div>
+            </button>
+            <button id="compilePromptButton" class="tooltip right button warning-button" style="margin: 0;">&#x1F5D8; Refresh
+                <div class="tooltiptext">Reload the conversation with the changed settings and names.</div>
+            </button>
+        </div>
+        <div class="chat-panel-body" id="chatPromptCompiled"></div>
+        <textarea id="fullCompiledPrompt" class="compiled-prompt-content"></textarea>
+        <button data-copy-prompt class="tooltip right button warning-button w-100" style="margin: 0;">&#x1F4CB; Copy chat prompt
+            <div class="tooltiptext tooltiptext-north">Copy the conversation to the clipboard. You can paste it manually on any LLM Chat (e.g. ChatGPT).</div>
+        </button>
+    </div>
+</div>
+
+<div class="settings-panel flex-column">
+    <h3>&#x1F575; User Anonymization</h3>
+    <div class="member-settings-hide">Select an App and a Chat. By providing more details you can increase user privacy.</div>
+    <div class="member-settings-show" style="display:none">Anonymity will be guaranteed by replacing sensitive data
+    (&#x1F512; <b>Name value</b>) with a randomly generated surrogate word. This will prevent your contact's personal
+    information from being leaked.<br>
+    </div>
+    <div id="membersSettingChatType" class="member-settings-show" style="display:none"></div>
+    <div id="membersSettingChatMembers" class="member-settings-show" style="display:none"></div>
+    <div class="member-settings-show" style="display:none">Select chat member:</div>
+    <select id="memberSelect" class="member-settings-show"  style="display:none"></select>
+    <div id="memberInfo" class="flex-table member-settings-show"  style="display:none">
+        <div class="header">
+            <div class="col">&#x1F511; <b>Name key</b><button class="tooltip rounded">?<div class="tooltiptext tooltiptext-north">It specifies the category which the sensitive data belongs to. The sensitive data corresponds to the Name value content which will be substituted.<br> For example:<br> <b>Name key</b>: gaming nickname <br><b>Name value</b>: Shadowstrike.<br> Every time "Shadowstrike" is found in a message it will be substituted with a random gaming nickname.</div></button></div>
+            <div class="col">&#x1F512; <b>Name value</b><button class="tooltip rounded">?<div class="tooltiptext">All data listed here will be kept <b>private</b>.</div></button></div>
+        </div>
+        <div class="footer">
+            <div class="w-100">
+                <button id="memberInfoDiscardButton" class="button warning-button right tooltip">&#x1F5D1; Discard<div class="tooltiptext">Discard</div></button>
+                <button id="memberInfoSaveButton" class="button warning-button right tooltip">&#x1F4BE; Save<div class="tooltiptext">Save</div></button>
+                <button id="memberInfoAddButton" class="button warning-button right tooltip">&#x2795; Add<div class="tooltiptext">Add row</div></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="settings-panel flex-column">
+    <h3>&#x1F9E0; Language Model <button class="tooltip rounded">?<div class="tooltiptext">AI Large Language Model used to generate the text.</div></button></h3>
+    <select id="modelSelect" >
+        <option value="OpenAI:text-davinci-003">OpenAI > DaVinci</option>
+        <option value="OpenAI:chat/gpt-3.5-turbo">OpenAI > ChatGPT</option>
+        <option value="OpenAI:chat/gpt-4">OpenAI > GPT-4</option>
+        <option value="HuggingFace:gpt2">HuggingFace > GPT 2</option>
+        <option value="HuggingFace:bigscience/bloom">HuggingFace (FREE) > BigScience > Bloom 176B</option>
+        <option value="HuggingFace:google/flan-t5-xxl">HuggingFace (FREE) > Google > flan-t5-xxl</option>
+        <option value="HuggingFace:tiiuae/falcon-7b">HuggingFace (FREE) > tiiuae > Falcon 7B</option>
+        <option value="HuggingFace:tiiuae/falcon-7b-instruct">HuggingFace (FREE) > tiiuae > Falcon chat 7B</option>
+        <option value="HuggingFace:WizardLM/WizardLM-7B-V1.0">HuggingFace (FREE) > WizardLM > WizardLM-V1.0 7B</option>
+        <option value="HuggingFace:tiiuae/falcon-40b-instruct">HuggingFace > tiiuae > Falcon chat 40B</option>
+        <option value="HuggingFace:WizardLM/WizardLM-30B-V1.0">HuggingFace > WizardLM > WizardLM-V1.0 30B</option>
+        <option value="HuggingFace:PygmalionAI/pygmalion-6b">HuggingFace > PygmalionAI > pygmalion 6B (18+)</option>
+        <option value="HuggingFace:TheBloke/Wizard-Vicuna-30B-Uncensored-GPTQ">HuggingFace > TheBloke > Wizard-Vicuna-Uncensored-GPTQ 30B (18+)</option>
+    </select>
+    <div class="flex"><div class="left">Insert your API Key (<span class="modelProviderLabel"></span>): </div></div>
+    <input type="password" placeholder="api key" id="modelProviderKey">
+    <div>
+        <button id="modelProviderkeySetButton" class="button warning-button right">&#x1F4BE;&#x1F511; Set key</button>
+        <button id="modelProviderkeyForgetButton" style="display: none;" class="button danger-button right">&#x274C;&#x1F511; Forget</button>
+    </div>
+</div>
+
+<div class="settings-panel flex-column">
+    <h3>&#x2B50; Text generation<button class="tooltip rounded">?<div class="tooltiptext">The setting options chosen here will influence the quality and the cost of the text generation. You can control this by selecting the options below.</div></button></h3>
+    <div class="flex"><div class="left">Number of messages selected:</div><button class="tooltip rounded">?<div class="tooltiptext">Select the amount of messages you would like to share with the LM.<br>
+            The content of the messages will then be automatically selected in an upward progression starting from the last one.
+            The amount of messages is proportionate to the cost and the quality of the generated answers.
+<!--        <b>Last message</b>: Low cost low quality answers, just based on the last previous message.<br>-->
+<!--        <b>Last five messages</b>: Medium cost and medium quality answers.<br>-->
+<!--        <b>Most messages</b>: High cost high quality answers. Add as many messages as can fit in the context window.<br>-->
+<!--        <b>Auto-selected messages</b>: Really high cost high quality answers. Add as many messages as can fit in the context window but selects the closest chat messages in terms of contents.<br>-->
+<!--        <b>Select messages</b>: Medium cost and high quality answers. Add as many messages as you want by selecting them inside the chat.<br>-->
+    </div></button></div>
+    <select id="answerSelect" >
+        <option value="one">Last message</option>
+        <option value="five">Last five messages</option>
+        <option value="unlimited">Most messages</option>
+<!--        <option value="query">Auto-selected messages (upcoming)</option>-->
+<!--        <option value="select">Select messages (upcoming)</option>-->
+    </select>
+    <div class="flex"><div class="left">Add other people reactions to your generated message:</div><button class="tooltip rounded">?<div class="tooltiptext">This setting enables the language model to provide an answer to the first generated message. It provides possible follow-up messages to the first generated answer. It does not influence the answer's quality nor the cost of model usage.</div></button></div>
+    <div ><input id="memberAnswerCheckbox" type="checkbox"><label for="memberAnswerCheckbox">Add member answers</label></div>
+    <div class="flex"><div class="left">Show multiple answers:</div><button class="tooltip rounded">?<div class="tooltiptext">This feature allows you to chose from 3 messages instead  of one. By setting this feature you will be making a valid investment as you will obtain better answers, and you will not be paying each individual message.</div></button></div>
+    <div ><input id="showChoiceCheckbox" type="checkbox"><label for="showChoiceCheckbox">Show many choices</label></div>
+</div>
+
+<div class="settings-panel flex-column">
+    <h3>&#x1F310; Language <button class="tooltip rounded">?<div class="tooltiptext">Choose a language for the previously selected conversation. The timestamps and the substituted data will also be written in the chosen language. (e.g. Italian conversation: Sono le 16:45! Will be translated to: It's 4:45 PM!</div></button></h3>
+    <div >Select the chat language:</div>
+    <select  id="languageSelect">
+<!--        <option value="*">&#x1F3F3; any (upcoming)</option>-->
+<!--        <option value="auto">&#x1F3C1; auto (upcoming)</option>-->
+        <option value="it-it">&#x1F1EE; - &#x1F1EE;&#x1F1F9; Italiano</option>
+        <option value="en-us" selected>&#x1F1FA; - &#x1F1FA;&#x1F1F8; English</option>
+        <option value="es-es">&#x1F1EA; - &#x1F1EA;&#x1F1F8; Espa&#xf1;ol</option>
+        <option value="fr-fr">&#x1F1EB; - &#x1F1EB;&#x1F1F7; Fran&#xe7;ais</option>
+<!--        <option value="en-uk">&#x1F1EC; - &#x1F1EC;&#x1F1E7; english  (upcoming)</option>-->
+    </select>
+</div>
+
+<div class="settings-panel flex-column">
+    <h3>&#x1F4A1; Instructions</h3>
+    <div class="instructions-panel">
+        This extension automatically replies to chat message by masking sensitive information for different <span class="chat-provider-tag">&#x1F5E8; webchats</span>.
+        The <span class="chat-provider-tag">&#x1F5E8; webchat</span> language must be set to English.<br>
+        An <span class="api-key-tag">&#x1F511; API Key</span> is required to access the model.<br>
+        Further instructions can be found at <span class="extension-interface-tag">&#x1F4F0; Extension's page</span>
+        <button data-open-extension-site class="button danger-button w-100">Go to Manual Website</button>
+    </div>
+</div>
+<div class="credits-panel">
+    <b>Powered by:</b> <img src="/images/png/openai.png" class="inline-icon"> <a href="https://openai.com/">OpenAI</a>, <img src="/images/png/huggingface.png" class="inline-icon"> <a href="https://huggingface.co/">HuggingFace</a><br>
+    <b>Web Chats:</b> <img src="/images/png/telegram.png" class="inline-icon"> <a href="https://telegram.org/">Telegram</a>, <img src="/images/png/whatsapp.png" class="inline-icon"> <a href="https://www.whatsapp.com/">Whatsapp</a><br>
+    <b>Credits:</b> Developed by Lorenzo Vaccaro with ChatGPT, HuggingFace and Openjourney.
+    <hr>
+    <div class="flex-column support-me-panel">
+        This extension has been created in my spare time. Feel free to support me:<br><br>
+        <a href="https://www.buymeacoffee.com/lollo1" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+    </div>
+   </div>
+</div>
+</body>
+</html>

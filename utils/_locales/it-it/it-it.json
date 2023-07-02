@@ -1,0 +1,77 @@
+{
+  "address": {
+    "value": "Indirizzo in Italia",
+    "choice": "address.json",
+    "prompt": "Genera una lista casuale di 150 indirizzi fittizi in Italia. Non ripetere alcun indirizzo, non specificare la città."
+  },
+  "animal_name":{
+    "value": "Nome di animale domestico",
+    "choice": "animal_name.json",
+    "prompt": "Scrivi una lista di 150 nomi di animale domestico fittizi che potrebbero vivere in Italia. Non ripetere alcun nome di animale domestico."
+  },
+  "company_name": {
+    "value": "Nome di società",
+    "choice": "company_name.json",
+    "prompt": "Scrivi una lista di 150 nomi di società fittizie che potrebbero avere sede fiscale in Italia. Non ripetere alcun nome di società."
+  },
+  "couple_nickname": {
+    "value": "Nomignolo affettuoso",
+    "choice": "couple_nickname.json",
+    "prompt": "Scrivi una lista di 150 nomi affettuosi di persone fittizie che potrebbero vivere in Italia. Non ripetere alcun nomignolo. Un nomignolo è un nome affettuoso per il proprio partner in coppia."
+  },
+  "female_name": {
+    "value": "Nome femminile",
+    "choice": "female_name.json",
+    "prompt": "Scrivi una lista di 150 nomi femminili di persone fittizie che potrebbero vivere in Italia. Non ripetere alcun nome femminile."
+  },
+  "first_name": {
+    "value": "Nome",
+    "choice": "first_name.json",
+    "prompt": "Scrivi una lista di 150 nomi di persone fittizie che potrebbero vivere in Italia. Non ripetere alcun nome, non scrivere alcun cognome."
+  },
+  "gaming_name": {
+    "value": "Soprannome gaming",
+    "choice": "gaming_nickname.json",
+    "prompt": "Scrivi una lista di 150 soprannomi di gaming per persone fittizie che potrebbero vivere in Italia. Non ripetere alcun soprannome, tieni in considerazione che ci sono pochi soprannomi non italiani in Italia."
+  },
+  "last_name": {
+    "value": "Cognome",
+    "choice": "last_name.json",
+    "prompt": "Scrivi una lista di 150 cognomi di persone fittizie che potrebbero vivere in Italia. Non ripetere alcun cognome."
+  },
+  "male_name": {
+    "value": "Nome maschile",
+    "choice": "male_name.json",
+    "prompt": "Scrivi una lista di 150 nomi maschili di persone fittizie che potrebbero vivere in Italia. Non ripetere alcun nome maschile."
+  },
+  "nickname": {
+    "value": "Soprannome",
+    "choice": "nickname.json",
+    "prompt": "Scrivi una lista di 150 soprannomi di persone fittizie che potrebbero vivere in Italia. Non ripetere alcun soprannome, tieni in considerazione che ci sono anche soprannomi non italiani in Italia."
+  },
+  "name": {
+    "value": "Nome e cognome",
+    "choice": "person_name.json",
+    "prompt": "Scrivi una lista di 150 nomi completi (nome e cognome) di persone fittizie che potrebbero vivere in Italia. Non ripetere alcun nome e cognome."
+  },
+  "phone_number": {
+    "value": "Numero di telefono in Italia",
+    "choice": "phone_number.json",
+    "prompt": "Scrivi un numero di telefono di persone fittizie che potrebbero vivere in Italia. Non ripetere alcun numero di telefono."
+  },
+  "license_plate": {
+    "value": "Targa",
+    "choice": "license_plate.json",
+    "prompt": "Genera una lista di 150 numeri di targa casuali per veicoli in Italia."
+  },
+  "username": {
+    "value": "Nome utente",
+    "choice": "username.json",
+    "prompt": "Scrivi una lista di 150 nomi utente fittizi per persone che potrebbero vivere in Italia. Non ripetere alcun nome utente."
+  },
+  "password": {
+    "value": "Password",
+    "choice": "password.json",
+    "prompt": "Scrivi una lista di 150 password fittizie per persone che potrebbero vivere in Italia. Non ripetere alcuna password."
+  }
+}

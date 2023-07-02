@@ -1,0 +1,7 @@
+{
+  "private": "The following is a conversation between me and {chat_name}, answer as if you were me.\nIf you find a message like {or_non_text_messages} consider a communication has been sent, but you do not know what it is.\nDo not ask me for more information, do not use {nor_non_text_messages}\nHere is the conversation:",
+  "group": "The following is a conversation between me and the group {chat_name}, answer as if you were me.\nIf you find a message like {or_non_text_messages} consider a communication has been sent, but you do not know what it is.\nDo not ask me for more information, do not use {nor_non_text_messages}\nHere is the conversation:",
+  "or": "or",
+  "nor": "nor",
+  "me": "Me"
+}

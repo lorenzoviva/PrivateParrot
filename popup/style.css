@@ -1,0 +1,326 @@
+:root {
+    --color-white-light: #e6e6e6;
+    --color-black-dark: #191919;
+    --color-main-light: #34A0A4;;
+    --color-main: #168AAD;
+    --color-main-dark: #1A759F;
+    --color-main-very-dark: #1E6091;
+    --color-main-black: #184E77;
+    --color-info: #B5E48C;
+    --color-info-dark: #99D98C;
+    --color-warning: #52B69A;
+    --color-danger: #D9ED92;
+}
+/*Colors*/
+
+ /*Tags*/
+body {
+    min-width: 300px;
+    color: var(--color-black-dark);
+    margin: 0;
+}
+
+hr {
+    width: 100%;
+}
+
+h3 {
+    background: var(--color-main-dark);
+    font-size: 1.35rem;
+}
+
+h3, h1 {
+    border-radius: 0.25rem;
+    padding: 0.5rem 0 0.5rem 0.25rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+h1 {
+    min-height: 2rem;
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+select, input[type="text"], input[type="password"]{
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 0;
+}
+textarea{
+    font-family: unset;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    border: 0;
+    background: var(--color-main-dark);
+    color: var(--color-white-light);
+    resize: none;
+}
+label {
+    margin-left: 0.5rem;
+}
+a {
+    color: white;
+}
+ /*Classes*/
+
+.title{
+    font-size: 3rem;
+    height: 3rem;
+    text-align: center;
+    /*padding: 1rem 1rem 1rem 0;*/
+    padding: 1rem;
+    /*float: right;*/
+}
+.main-icon{
+    float: left;
+}
+.inline-icon{
+    height: 1rem;
+}
+.header, .footer, .row {
+    display: flex;  /* aligns all child elements (flex items) in a row */
+    margin-top: 0.25rem;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.flex{
+    display: flex;
+}
+.inline-block{
+    display: inline-block;
+}
+.w-100{
+    width: 100%;
+}
+.left{
+flex-grow: 1;
+}
+.right{
+float: right;
+}
+.col {
+flex: 1;        /* distributes space on the line equally among items */
+}
+.col > * {
+    width: 100%;
+    max-width: -webkit-fill-available;
+}
+.row > :first-child {
+    margin-right: 0.25rem;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    max-width: 12rem;
+    width: max-content;
+    background-color: var(--color-black-dark);
+    color: var(--color-white-light);
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 1rem;
+    font-variant: none;
+    line-height: 1.25rem;
+}
+.tooltiptext-north{
+    transform: translateX(-50%);
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.rounded.tooltip {
+    width: 1.35rem;
+    border-radius: 1REM;
+    border: 1px var(--color-info-dark) solid;
+    margin: 0.25rem;
+    height: 1.35rem;
+    font-size: 0.95rem;
+    text-align: center;
+    padding: 0.1rem;
+    background: var(--color-info);
+    float: right;
+    min-width: 1.35rem;
+}
+
+
+.header-panel{
+    padding: 0.5rem;
+    background: var(--color-white-light);
+    color: var(--color-main-black);
+}
+.header-panel > select {
+    border: 1px solid;
+    background: var(--color-white-light);
+    color: var(--color-main-black);
+
+}
+.settings-background{
+    background: var(--color-main-black);
+    padding: 0.5rem;
+    color: var(--color-white-light);
+}
+
+.chat-panel{
+    margin-top:1rem;
+}
+.chat-panel-header{
+    background: var(--color-main);
+    color: var(--color-white-light);
+    padding: 0.5rem;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.chat-panel-body{
+    background: var(--color-main-dark);
+    padding: 0.5rem;
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
+.settings-panel{
+    background: var(--color-main-very-dark);
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.settings-panel > :not(:last-child) {
+    margin-top: 0.5rem;
+}
+.settings-panel > :last-child {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.warning-button{
+    border: 1px var(--color-main-dark) solid;
+    background: var(--color-warning);
+    color: black;
+}
+.danger-button{
+    border: 1px var(--color-main-dark) solid;
+    background: var(--color-danger);
+    color: black;
+}
+.button {
+    margin: 0.25rem;
+    height: 1.35rem;
+    font-size: 0.95rem;
+    text-align: center;
+    line-height: 0.9rem;
+    padding: 0 0.5rem;
+    border-radius: 0.25rem;
+    font-variant: all-small-caps;
+}
+.button:hover {
+    border-radius: 1rem;
+}
+.pre-prompt-panel {
+    /*font-variant: all-small-caps;*/
+    font-weight: 500;
+    /*background: var(--color-main-light);*/
+    padding: 0.25rem;
+    line-height: 1.8rem;
+}
+ .chat-conversation-panel {
+     /*padding: 0.25rem;*/
+ }
+ .chat-message-panel {
+     padding: 0.25rem;
+     margin: 0.25rem 0;
+     background: var(--color-main-light);
+     position: relative;
+ }
+ .post-prompt-panel{
+     background: var(--color-main-light);
+     padding: 0.25rem;
+ }
+ .chat-message-date{
+     font-size: x-small;
+     margin-bottom: 0.25rem;
+     text-align: center;
+ }
+ .chat-message-anonymized-original{
+     text-decoration: line-through;
+     background: rgb(255 255 255 / 20%);
+     padding: 0.25rem;
+ }
+ .chat-message-anonymized{
+     background: rgb(0 0 0 / 20%);
+     padding: 0.25rem;
+ }
+ .chat-message-text{
+    margin-left: 0.25rem;
+ }
+ .chat-message-pin{
+     position: absolute;
+     bottom: 0;
+     border-left: 0.5rem solid transparent;
+     border-right: 0.5rem solid transparent;
+     border-bottom: 0.5rem solid var(--color-main-light);
+ }
+  .chat-message-pin-left{
+     left: -0.5rem;
+ }
+  .chat-message-pin-right{
+     right: -0.5rem;
+ }
+.compiled-prompt-content{
+    display:none;
+}
+.instructions-panel{
+    /*font-size: 75%;*/
+    line-height: 1.3rem;
+}
+.credits-panel{
+    line-height: 1.5rem;
+    font-size: 0.85rem;
+}
+
+.instructions-sub-panel{
+    background: rgb(255 255 255 / 10%);
+    padding: 0.25rem;
+    margin:0.25rem 0;
+}
+.chat-provider-tag{
+    background: rgb(0 0 0 / 20%);
+}
+.api-key-tag{
+    background: rgb(0 0 0 / 20%);
+}
+.language-model-tag{
+    background: rgb(0 0 0 / 20%);
+}
+.interface-tag{
+    background: rgb(0 0 0 / 20%);
+}
+.overlay-interface-tag{
+    background: rgb(0 0 0 / 20%);
+}
+.popup-interface-tag{
+    background: rgb(0 0 0 / 20%);
+}
+.extension-interface-tag{
+    background: rgb(0 0 0 / 20%);
+}
+.support-me-panel{
+    text-align: center;
+}

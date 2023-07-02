@@ -1,0 +1,77 @@
+{
+  "address": {
+    "value": "Adresse en France",
+    "choice": "address.json",
+    "prompt": "Générez une liste aléatoire de 150 adresses fictives en France. Ne répétez aucune adresse, ne spécifiez pas la ville."
+  },
+  "animal_name": {
+    "value": "Nom d'animal domestique",
+    "choice": "animal_name.json",
+    "prompt": "Écrivez une liste de 150 noms fictifs d'animaux domestiques qui pourraient exister en France. Ne répétez aucun nom d'animal."
+  },
+  "company_name": {
+    "value": "Nom de société",
+    "choice": "company_name.json",
+    "prompt": "Écrivez une liste de 150 noms fictifs de sociétés qui pourraient être basées en France. Ne répétez aucun nom de société."
+  },
+  "couple_nickname": {
+    "value": "Surnom pour couple",
+    "choice": "couple_nickname.json",
+    "prompt": "Écrivez une liste de 150 surnoms affectueux pour des personnes fictives vivant en France. Ne répétez aucun surnom. Un surnom est un nom affectueux pour son partenaire dans un couple."
+  },
+  "female_name": {
+    "value": "Prénom féminin",
+    "choice": "female_name.json",
+    "prompt": "Écrivez une liste de 150 prénoms fictifs féminins qui pourraient appartenir à des personnes vivant en France. Ne répétez aucun prénom féminin."
+  },
+  "first_name": {
+    "value": "Prénom",
+    "choice": "first_name.json",
+    "prompt": "Écrivez une liste de 150 prénoms fictifs qui pourraient appartenir à des personnes vivant en France. Ne répétez aucun prénom, n'écrivez aucun nom de famille."
+  },
+  "gaming_name": {
+    "value": "Surnom de jeu",
+    "choice": "gaming_nickname.json",
+    "prompt": "Écrivez une liste de 150 surnoms de gaming pour des joueurs fictifs vivant en France. Ne répétez aucun surnom, gardez à l'esprit qu'il y a peu de surnoms non français en France."
+  },
+  "last_name": {
+    "value": "Nom de famille",
+    "choice": "last_name.json",
+    "prompt": "Écrivez une liste de 150 noms de famille fictifs qui pourraient appartenir à des personnes vivant en France. Ne répétez aucun nom de famille."
+  },
+  "male_name": {
+    "value": "Prénom masculin",
+    "choice": "male_name.json",
+    "prompt": "Écrivez une liste de 150 prénoms masculins fictifs qui pourraient appartenir à des personnes vivant en France. Ne répétez aucun prénom masculin."
+  },
+  "nickname": {
+    "value": "Surnom",
+    "choice": "nickname.json",
+    "prompt": "Écrivez une liste de 150 surnoms entre amis pour des personnes fictives qui pourraient vivre en France. Ne répétez aucun surnom."
+  },
+  "name": {
+    "value": "Nom",
+    "choice": "person_name.json",
+    "prompt": "Écrivez une liste de 150 noms complets fictifs (prénom et nom de famille) de personnes qui pourraient vivre en France. Ne répétez aucun nom complet."
+  },
+  "phone_number": {
+    "value": "Numéro de téléphone en France",
+    "choice": "phone_number.json",
+    "prompt": "Écrivez une liste de 150 numéros de téléphone fictifs pour des personnes qui pourraient vivre en France. Ne répétez aucun numéro de téléphone."
+  },
+  "license_plate": {
+    "value": "Plaque d'immatriculation",
+    "choice": "license_plate.json",
+    "prompt": "Générez une liste de 150 numéros de plaque d'immatriculation aléatoires en France."
+  },
+  "username": {
+    "value": "Nom d'utilisateur",
+    "choice": "username.json",
+    "prompt": "Écrivez une liste de 150 noms d'utilisateur fictifs pour des personnes qui pourraient vivre en France. Ne répétez aucun nom d'utilisateur."
+  },
+  "password": {
+    "value": "Mot de passe",
+    "choice": "password.json",
+    "prompt": "Écrivez une liste de 150 mots de passe fictifs pour des personnes qui pourraient vivre en France. Ne répétez aucun mot de passe."
+  }
+}

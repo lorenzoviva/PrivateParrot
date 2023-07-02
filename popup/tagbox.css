@@ -1,0 +1,77 @@
+.tag-area {
+    outline: none;
+    width: 100%;
+    border-radius: 1rem;
+    transition: all 0.2s;
+    cursor: text;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: var(--color-black-dark);
+    background: #FFF;
+}
+
+
+.tag-area ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 0.1rem;
+    margin-bottom: 0.1rem;
+    margin-top: 0.1rem;
+}
+
+.active {
+    border: 2px solid #bebebe !important;
+}
+
+.tag {
+    padding-left: 0.8rem;
+    background: var(--color-main-very-dark);
+    color: var(--color-white-light);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.1rem;
+}
+
+.tag-input {
+    padding: 0.5rem;
+    outline: none;
+    border: none;
+    width: 150px;
+    background: transparent;
+}
+
+.cross {
+    cursor: pointer;
+    display: flex;
+    margin-left: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem;
+    transform: rotate(45deg);
+    border-radius: 50%;
+    background: var(--color-main-dark);
+}
+
+.cross:hover {
+    background:  var(--color-main-very-dark);
+}
+
+.cross::before {
+    content: "";
+    width: 2px;
+    height: 16px;
+    position: absolute;
+    background: var(--color-white-light);
+}
+
+.cross::after {
+    content: "";
+    height: 2px;
+    width: 16px;
+    position: absolute;
+    background: var(--color-white-light);
+}

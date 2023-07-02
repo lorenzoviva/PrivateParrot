@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Private Parrot</title>
+    <script type="module" src="popup.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex-column">
+<div class="header-panel flex-column">
+    <div><img src="/images/png/parrot.png" class="right" style="height: 10rem;"><h1 class="title">Private Parrot</h1></div>
+
+    <hr>
+</div>
+<div class="settings-background flex-column">
+    <h1> <img src="/images/png/parrot.png" class="inline-icon"> Private Parrot - Anonymized Web Chats AI replies powered by OpenAI & HuggingFace</h1>
+    This extension generates and completes responses in chats through AI, with a focus on privacy. Mask chats by replacing sensitive information with randomly generated data.
+    The service is free, however the language models are paid, in the initial section it is described how to use this extension without any expense.
+    <div class="settings-panel flex-column">
+        <h3>&#x26A0; Requirements</h3>
+        <div class="instructions-panel">
+            In order to use the extension, a quick setup is required.
+            The <span class="chat-provider-tag">&#x1F5E8; webchat</span> language must be set to English.<br>
+            <div class="instructions-sub-panel">
+                For <img src="/images/png/whatsapp.png" class="inline-icon"> <a href="https://www.whatsapp.com/">Whatsapp</a> change the Mobile App's language:<br>
+                <ul>
+                    <li> Open WhatsApp on your mobile device.</li>
+                    <li> Tap More options (the button with three dots on the top right of screen).</li>
+                    <li> Settings.</li>
+                    <li> App Language.</li>
+                    <li> Select the English language.</li>
+                    <li> Reconnect to <a href="https://web.telegram.org/k/">Web Whatsapp.</a>
+                </ul>
+                For <img src="/images/png/telegram.png" class="inline-icon"> <a href="https://telegram.org/">Telegram</a>:
+                <ul>
+                    <li> Open the <a href="https://web.telegram.org/k/">Web Telegram</a> page.</li>
+                    <li> Click More options (the button with three horizontal dashes on the top left of screen).</li>
+                    <li> Settings.</li>
+                    <li> Language.</li>
+                    <li> Select the English language.</li>
+                </ul>
+            </div>
+            An <span class="api-key-tag">&#x1F511; API Key</span> is required to access the <span class="language-model-tag">&#x1F9E0; Language Model</span>*.<br>
+            You can choose from the Models available on <img src="/images/png/openai.png" class="inline-icon"> OpenAI and <img src="/images/png/huggingface.png" class="inline-icon"> HuggingFace.<br>
+            Once you sign up you can use the instructions below to find the <span class="api-key-tag">&#x1F511; API Key</span>.<br>
+            <div class="instructions-sub-panel">
+                Get <img src="/images/png/openai.png" class="inline-icon"> OpenAI <span class="api-key-tag">&#x1F511; API Key</span> at <a href="https://beta.openai.com/account/api-keys">openai.com/account/api-keys</a><br>
+                Get <img src="/images/png/huggingface.png" class="inline-icon"> HuggingFace <span class="api-key-tag">&#x1F511; API Key</span> at <a href="https://huggingface.co/settings/tokens">huggingface.co/settings/tokens</a>
+            </div>
+            Open the <span class="popup-interface-tag">&#x1F4E9; popup</span> interface and select the desired <span class="language-model-tag">&#x1F9E0; Language Model</span><br>
+            Set the key and click on "Set key" button to save the API key.<br>
+            * Alternatively, you can use the "Copy prompt chat" button in <span class="popup-interface-tag">&#x1F4E9; popup</span> and paste it manually into any LLM chat (for example ChatGPT).
+        </div>
+    </div>
+    <div class="settings-panel flex-column">
+        <h3>&#x1F5E8; Web Chat Providers</h3>
+        <div class="instructions-panel">
+            For now the <span class="chat-provider-tag">&#x1F5E8; webchats</span> available are <img src="/images/png/telegram.png" class="inline-icon"> <a href="https://telegram.org/">Telegram</a> and <img src="/images/png/whatsapp.png" class="inline-icon"> <a href="https://www.whatsapp.com/">Whatsapp</a>, we intend to integrate further chats.<br>
+            For the generation of responses it is necessary to collect some information from the <span class="chat-provider-tag">&#x1F5E8; webchat</span> site.<br>
+            The information collected for a specific chat can be consulted on the <span class="popup-interface-tag">&#x1F4E9; popup</span> interface, by selecting the App and the Chat at the top, the recorded text of the conversation appears.<br>
+            We care about privacy, all data is stored on your browser and sent directly to the <span class="language-model-tag">&#x1F9E0; model</span> already masked.<br>
+            The data can be deleted with the two buttons on top of the <span class="popup-interface-tag">&#x1F4E9; popup</span> interface: <button class="button danger-button">&#x274C;&#x1F4BE; Clear storage</button> (performs a complete reset) and <button class="button danger-button">&#9851; Clear cache</button> (deletes conversations).<br>
+
+        </div>
+    </div>
+    <div class="settings-panel flex-column">
+        <h3>&#x1F575; User Anonymization</h3>
+        <div class="instructions-panel">
+            In the <span class="popup-interface-tag">&#x1F4E9; popup</span> interface, once you select a group or private chat you can specify further information to enforce privacy.<br>
+            Anonymity will be guaranteed by replacing sensitive data (every &#x1F512; <b>Name value</b> in the <span class="popup-interface-tag">&#x1F4E9; popup</span> table) with a randomly generated surrogate word. This will prevent your contact's personal information from being leaked.<br>
+            You can choose the data to mask and avoid sending it to the <span class="language-model-tag">&#x1F9E0; Language Model</span>.<br>
+            The replacements will be randomly sampled from the category selected in &#x1F511; <b>Name key</b> in the <span class="popup-interface-tag">&#x1F4E9; popup</span> interface table.<br>
+            The categories random examples were generated with ChatGPT in all languages.
+        </div>
+    </div>
+    <div class="settings-panel flex-column">
+        <h3>&#x1F4A1; Tips</h3>
+        <div class="instructions-panel">
+            <ul>
+                <li>If the <span class="overlay-interface-tag">&#x1F4CE; overlay</span> interface does not respond or remains in the loading state, press twice the <button class="button danger-button">&#x1F50C; Restart</button> button in the top left section of the <span class="popup-interface-tag">&#x1F4E9; popup</span> to reload the extension (does not delete anything).</li>
+                <li>You can scroll up in chat panel to gather older messages.</li>
+                <li>The Prompt section is useful to specify the relationship with the chat members.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="settings-panel flex-column">
+        <h3>&#x1F5A5; Interfaces</h3>
+        <div class="instructions-panel">
+            The extension consists of three <span class="interface-tag">&#x1F5A5; interfaces</span>:
+            <ul>
+                <li> The <span class="popup-interface-tag">&#x1F4E9; popup</span>: Click on extension's icon (on top of the browser, next to the search bar) to open the <span class="popup-interface-tag">&#x1F4E9; popup</span> interface</li>
+                <li> An <span class="overlay-interface-tag">&#x1F4CE; overlay</span> for each <span class="chat-provider-tag">&#x1F5E8; webchat</span>. This interface will appear on top of the chat input text box.</li>
+                <li> This page, the <span class="extension-interface-tag">&#x1F4F0; Extension's page</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="settings-panel flex-column">
+        <h3>&#x1F4BB; Developers</h3>
+        <div class="instructions-panel">
+            Feel free to make a pull request for a new language, a new webchat or to integrate with new models.<br>
+            The project is open source and the repository is available at
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
