@@ -5,7 +5,6 @@
   "version": "0.0.1",
   "permissions": [
     "storage",
-    "scripting",
     "activeTab",
     "unlimitedStorage"
   ],
