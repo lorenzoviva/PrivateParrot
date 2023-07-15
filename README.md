@@ -1,4 +1,4 @@
-(Get Private Parrot for free)[https://chrome.google.com/webstore/detail/private-parrot/fajfhpgedgeagjeninnlogilclofijmf]
+[Get Private Parrot for free](https://chrome.google.com/webstore/detail/private-parrot/fajfhpgedgeagjeninnlogilclofijmf)
 # Private Parrot - Anonymized Web Chats AI replies powered by OpenAI & HuggingFace
 This extension generates and completes responses in chats through AI, with a focus on privacy. Mask chats by replacing sensitive information with randomly generated data. The service is free, however the language models are paid, in the initial section it is described how to use this extension without any expense.
 ### ⚠ Requirements
