@@ -1,4 +1,4 @@
-
+(Get Private Parrot for free)[https://chrome.google.com/webstore/detail/private-parrot/fajfhpgedgeagjeninnlogilclofijmf]
 # Private Parrot - Anonymized Web Chats AI replies powered by OpenAI & HuggingFace
 This extension generates and completes responses in chats through AI, with a focus on privacy. Mask chats by replacing sensitive information with randomly generated data. The service is free, however the language models are paid, in the initial section it is described how to use this extension without any expense.
 ### ⚠ Requirements
@@ -45,7 +45,7 @@ The categories random examples were generated with ChatGPT in all languages.
 The extension consists of three 🖥 interfaces:
 - The 📩 popup: Click on extension's icon (on top of the browser, next to the search bar) to open the 📩 popup interface
 - An 📎 overlay for each 🗨 webchat. This interface will appear on top of the chat input text box.
-- This page, the 📰 Extension's page
+- The 📰 Extension's manual page
 ### 💻 Developers
 Feel free to make a pull request for a new language, a new webchat or to integrate with new models.
 The project is open source and the repository is available at [GitHub/PrivateParrot](https://github.com/lorenzoviva/PrivateParrot).
