@@ -24,7 +24,8 @@ Get  OpenAI 🔑 API Key at openai.com/account/api-keys
 Get  HuggingFace 🔑 API Key at huggingface.co/settings/tokens
 Open the 📩 popup interface and select the desired 🧠 Language Model
 Set the key and click on "Set key" button to save the API key.
-  Alternatively, you can use the "Copy prompt chat" button in 📩 popup and paste it manually into any LLM chat (for example ChatGPT).
+ 
+*Alternatively, you can use the "Copy prompt chat" button in 📩 popup and paste it manually into any LLM chat (for example ChatGPT).
 ### 🗨 Web Chat Providers
 For now the 🗨 webchats available are  Telegram and  Whatsapp, we intend to integrate further chats.
 For the generation of responses it is necessary to collect some information from the 🗨 webchat site.
